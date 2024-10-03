@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .hovering-Effect{
+        @apply relative before:-z-50 before:absolute before:bottom-0 before:w-full before:opacity-70 before:h-0 before:bg-green-400 hover:before:h-[10px] before:transition-[height] before:duration-300 ;
+    }
+}
+
+.my-font{
+    font-family: 'archia';
+}
+.more-height{
+    height: 590px;
+}
+/* images general effect */
+.imageeffect{
+    transition: width 500ms ;
+}
+/* first image */
+.imagescontainer:hover .firstimagetexthide{
+    display: none;
+}
+.firstimage:hover .firstimagetexthide{
+    display: flex;
+}
+
+/* second image */
+.secondimage:hover{
+    width: 160%;
+}
+.secondimage:hover .secondimagehide{
+    display: none;
+}
+.secondimage:hover .secondimageshow{
+    display: flex;
+}
+
+/* Third image */
+.thirdimage:hover{
+    width: 160%;
+}
+.thirdimage:hover .thirdimagehide{
+    display: none;
+}
+.thirdimage:hover .thirdimageshow{
+    display: flex;
+}
+
+
+
+
+
